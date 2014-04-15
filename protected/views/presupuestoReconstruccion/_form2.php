@@ -1,6 +1,5 @@
 <div class="form">
 
-
 <?php $form = $this->beginWidget('CActiveForm', array(
     'id'=>'presupuesto-reconstruccion-form',
     'enableAjaxValidation'=>true,
@@ -51,15 +50,15 @@
 	<?php
 	$this->widget('zii.widgets.jui.CJuiAccordion',array(
 		'panels'=>array(
-			'Información General'=>$this->renderPartial('_forminformaciongeneral',array('model'=>$modelig,'form'=>$form),true),
-			'Información Predio'=>$this->renderPartial('_forminformacionpredio',array('model'=>$modelip,'form'=>$form),true),
+			'1.INFORMACIÓN GENERAL'=>$this->renderPartial('_forminformaciongeneral',array('model'=>$modelig,'form'=>$form),true),
+			'2. INFORMACIÓN DEL PREDIO'=>$this->renderPartial('_forminformacionpredio',array('model'=>$modelip,'form'=>$form),true),
+			'3. CARACTERISTICAS DE LA CONSTRUCCION'=>$this->renderPartial('_formcaracteristicasconstruccion',array('model'=>$modelcc,'form'=>$form),true),
 		),
-		// additional javascript options for the accordion plugin
 		'options'=>array(
 			'collapsible'=> true,
-			'animated'=>'bounceslide',
+			//'animated'=>'bounceslide',
 			'autoHeight'=>false,
-			'active'=>2,
+			'active'=>13,
 		),
 	));
 	?>

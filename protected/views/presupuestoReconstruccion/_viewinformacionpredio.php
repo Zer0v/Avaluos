@@ -1,31 +1,111 @@
 <?php
-if($model->informacionGeneral!=null){
+if($model->informacionPredio!=null){
  $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		array(
-			'label'=>'Marca',
-			'value'=>$model->informacionGeneral->personaEntrevistada,
+			'label'=>$model->informacionPredio->attributeLabels()['predioCopropiedad'],
+			'value'=>$model->informacionPredio->predioCopropiedad,
 		),
 		array(
-			'label'=>'Marca',
-			'value'=>$model->informacionGeneral->telefono,
+			'label'=>$model->informacionPredio->attributeLabels()['conjuntoCerrado'],
+			'value'=>$model->informacionPredio->conjuntoCerrado,
 		),
 		array(
-			'label'=>'Marca',
-			'value'=>$model->informacionGeneral->personaEncargadaAdministracion,
+			'label'=>$model->informacionPredio->attributeLabels()['conjuntoCerradoOtro'],
+			'value'=>$model->informacionPredio->conjuntoCerradoOtro,
 		),
 		array(
-			'label'=>'Marca',
-			'value'=>$model->informacionGeneral->cargo,
+			'label'=>$model->informacionPredio->attributeLabels()['ciudad'],
+			'value'=>$model->informacionPredio->ciudad,
 		),
 		array(
-			'label'=>'Marca',
-			'value'=>$model->informacionGeneral->ciudad,
+			'label'=>$model->informacionPredio->attributeLabels()['barrio'],
+			'value'=>$model->informacionPredio->barrio,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['sector'],
+			'value'=>$model->informacionPredio->sector,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['estrato'],
+			'value'=>$model->informacionPredio->estrato,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['fechaFundacion'],
+			'value'=>$model->informacionPredio->fechaFundacion,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['numeroEmpleados'],
+			'value'=>$model->informacionPredio->numeroEmpleados,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['horarioTrabajo'],
+			'value'=>$model->informacionPredio->horarioTrabajo,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['linderoNorte'],
+			'value'=>$model->informacionPredio->linderoNorte,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['linderoNorteOcupado'],
+			'value'=>$model->informacionPredio->linderoNorteOcupado,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['linderoSur'],
+			'value'=>$model->informacionPredio->linderoSur,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['linderoSurOcupado'],
+			'value'=>$model->informacionPredio->linderoSurOcupado,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['linderoOriente'],
+			'value'=>$model->informacionPredio->linderoOriente,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['linderoOrienteOcupado'],
+			'value'=>$model->informacionPredio->linderoOrienteOcupado,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['linderoOccidente'],
+			'value'=>$model->informacionPredio->linderoOccidente,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['linderoOccidenteOcupado'],
+			'value'=>$model->informacionPredio->linderoOccidenteOcupado,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['entidadesOficiales'],
+			'value'=>$model->informacionPredio->entidadesOficiales,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['poliductosMineras'],
+			'value'=>$model->informacionPredio->poliductosMineras,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['aguasFallas'],
+			'value'=>$model->informacionPredio->aguasFallas,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['vias'],
+			'value'=>$model->informacionPredio->vias,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['amenazasComunidad'],
+			'value'=>$model->informacionPredio->amenazasComunidad,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['informacionRelacionesComunidad'],
+			'value'=>$model->informacionPredio->informacionRelacionesComunidad,
+		),
+		array(
+			'label'=>$model->informacionPredio->attributeLabels()['relacionesComunidadBuenas'],
+			'value'=>$model->informacionPredio->relacionesComunidadBuenas,
 		),
 	),
 )); 
 }else{
-	echo "No se ha ingresado Información General";
+	echo "No se ha ingresado InformaciÃ³n General";
 }
 ?>

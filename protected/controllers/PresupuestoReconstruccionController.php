@@ -1,6 +1,6 @@
 <?php
 
-class PresupuestoReconstruccionController extends Controller
+class PresupuestoreconstruccionController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -96,19 +96,21 @@ class PresupuestoReconstruccionController extends Controller
 	 */
 	public function actionIngresar()
 	{
+		$modelpr=new PresupuestoReconstruccion;
 		$modelig=new InformacionGeneral;
 		$modelip=new InformacionPredio;
-		$modelpr=new PresupuestoReconstruccion;
+		$modelcc=new CaracteristicasConstruccion;
 		
-		$this->performAjaxValidation(array($modelig,$modelip,$modelpr));
+		$this->performAjaxValidation(array($modelpr,$modelig,$modelip,$modelcc));
 		
-		if(isset($_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['PresupuestoReconstruccion']))
+		if(isset($_POST['PresupuestoReconstruccion'], $_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['CaracteristicasConstruccion']))
 		{
+			$modelpr->attributes=$_POST['PresupuestoReconstruccion'];
 			$modelig->attributes=$_POST['InformacionGeneral'];
 			$modelip->attributes=$_POST['InformacionPredio'];
-			$modelpr->attributes=$_POST['PresupuestoReconstruccion'];
+			$modelcc->attributes=$_POST['CaracteristicasConstruccion'];
 			
-			$valid=$modelig->validate() && $modelip->validate() && $modelpr->validate();
+			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate();
 			
 			 if($valid)
 			{
@@ -116,21 +118,20 @@ class PresupuestoReconstruccionController extends Controller
 				$modelpr->save(false);
 				$modelig->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
 				$modelip->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
+				$modelcc->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
 				$modelig->save(false);
 				$modelip->save(false);
+				$modelcc->save(false);
 				
 				$this->redirect(array('view','id'=>$modelpr->idPresupuestoReconstruccion));
 			}
 		}
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-
 		$this->render('ingresar',array(
+			'modelpr'=>$modelpr,
 			'modelig'=>$modelig,
 			'modelip'=>$modelip,
-			'modelpr'=>$modelpr,
+			'modelcc'=>$modelcc,
 		));
 	}
 
@@ -168,31 +169,35 @@ class PresupuestoReconstruccionController extends Controller
 		$modelpr=$this->loadModel($id);
 		$modelig=InformacionGeneral::model()->find('idPresupuestoReconstruccion = "'.$id.'"');
 		$modelip=InformacionPredio::model()->find('idPresupuestoReconstruccion = "'.$id.'"');
+		$modelcc=CaracteristicasConstruccion::model()->find('idPresupuestoReconstruccion = "'.$id.'"');
 		
 		// Uncomment the following line if AJAX validation is needed
-		$this->performAjaxValidation(array($modelig,$modelip,$modelpr));
+		$this->performAjaxValidation(array($modelpr,$modelig,$modelip,$modelcc));
 
-		if(isset($_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['PresupuestoReconstruccion']))
+		if(isset($_POST['PresupuestoReconstruccion'], $_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['CaracteristicasConstruccion']))
 		{
+			$modelpr->attributes=$_POST['PresupuestoReconstruccion'];
 			$modelig->attributes=$_POST['InformacionGeneral'];
 			$modelip->attributes=$_POST['InformacionPredio'];
-			$modelpr->attributes=$_POST['PresupuestoReconstruccion'];
+			$modelcc->attributes=$_POST['CaracteristicasConstruccion'];
 			
-			$valid=$modelig->validate() && $modelip->validate() && $modelpr->validate();
+			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate();
 			
 			 if($valid){
 				$modelpr->save(false);
 				$modelig->save(false);
 				$modelip->save(false);
+				$modelcc->save(false);
 				
 				$this->redirect(array('view','id'=>$id));
 			 }
 		}
 
 		$this->render('actualizar',array(
+			'modelpr'=>$modelpr,
 			'modelig'=>$modelig,
 			'modelip'=>$modelip,
-			'modelpr'=>$modelpr,
+			'modelcc'=>$modelcc,
 		));
 	}
 
@@ -206,7 +211,8 @@ class PresupuestoReconstruccionController extends Controller
 		$this->loadModel($id)->delete();
 		$modelig=InformacionGeneral::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
 		$modelip=InformacionPredio::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
-
+		$modelcc=CaracteristicasConstruccion::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
+		
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));

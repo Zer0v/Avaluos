@@ -1,11 +1,16 @@
 function muestraconjuntocerrado(id,rb){
-if (document.getElementById){ //se obtiene el id
-var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
-el.style.display = (rb == 'No') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
+	if (document.getElementById){ 
+		var el = document.getElementById(id); 
+		el.style.display = (rb == 'No') ? 'block' : 'none'; 
+	}
 }
+
+function muestraotrocc(id,rb){
+	if (document.getElementById){ 
+		var el = document.getElementById(id); 
+		el.style.display = (rb == 'Si') ? 'block' : 'none'; 
+	}
 }
-window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
-muestraconjuntocerrado('conjuntocerradomostrar','');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
-}
+
 
 

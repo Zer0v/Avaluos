@@ -12,7 +12,7 @@
  * @property string $pisoRiesgo
  * @property double $areaRiesgo
  * @property string $mamposteriaReforzada
- * @property string $mamposteriacConfinada
+ * @property string $mamposteriaConfinada
  * @property string $sistemaReticularCelulado
  * @property string $SistemaPorticoConcreto
  * @property string $unaDireccionC
@@ -48,15 +48,15 @@ class CaracteristicasConstruccion extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idPresupuestoReconstruccion, NPisos, NSotanos, existeMezanine, pisoRiesgo, areaRiesgo, mamposteriaReforzada, mamposteriacConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, cual, deterioro, observaciones', 'required'),
+			array('idPresupuestoReconstruccion, NPisos, NSotanos, existeMezanine, pisoRiesgo, areaRiesgo, mamposteriaReforzada, mamposteriaConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, deterioro', 'required'),
 			array('idCaracteristicasConstruccion, idPresupuestoReconstruccion, NPisos, NSotanos', 'numerical', 'integerOnly'=>true),
 			array('areaRiesgo', 'numerical'),
-			array('existeMezanine, mamposteriaReforzada, mamposteriacConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, deterioro', 'length', 'max'=>5),
+			array('existeMezanine, mamposteriaReforzada, mamposteriaConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, deterioro', 'length', 'max'=>5),
 			array('pisoRiesgo', 'length', 'max'=>25),
 			array('cual', 'length', 'max'=>250),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idCaracteristicasConstruccion, idPresupuestoReconstruccion, NPisos, NSotanos, existeMezanine, pisoRiesgo, areaRiesgo, mamposteriaReforzada, mamposteriacConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, cual, deterioro, observaciones', 'safe', 'on'=>'search'),
+			array('idCaracteristicasConstruccion, idPresupuestoReconstruccion, NPisos, NSotanos, existeMezanine, pisoRiesgo, areaRiesgo, mamposteriaReforzada, mamposteriaConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, cual, deterioro, observaciones', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -79,28 +79,28 @@ class CaracteristicasConstruccion extends CActiveRecord
 		return array(
 			'idCaracteristicasConstruccion' => 'Id Caracteristicas Construccion',
 			'idPresupuestoReconstruccion' => 'Id Presupuesto Reconstruccion',
-			'NPisos' => 'Npisos',
-			'NSotanos' => 'Nsotanos',
+			'NPisos' => 'No. Pisos a partir del nivel del terreno',
+			'NSotanos' => 'No. De sótanos',
 			'existeMezanine' => 'Existe Mezanine',
-			'pisoRiesgo' => 'Piso Riesgo',
-			'areaRiesgo' => 'Area Riesgo',
-			'mamposteriaReforzada' => 'Mamposteria Reforzada',
-			'mamposteriacConfinada' => 'Mamposteriac Confinada',
-			'sistemaReticularCelulado' => 'Sistema Reticular Celulado',
-			'SistemaPorticoConcreto' => 'Sistema Portico Concreto',
-			'unaDireccionC' => 'Una Direccion C',
-			'dosDireccionesC' => 'Dos Direcciones C',
-			'sistemaPorticoAcero' => 'Sistema Portico Acero',
-			'unaDireccionA' => 'Una Direccion A',
-			'dosDireccionesA' => 'Dos Direcciones A',
-			'sistemaDualConcreto' => 'Sistema Dual Concreto',
-			'sistemaMurosEstructurales' => 'Sistema Muros Estructurales',
-			'maderaTejaBarro' => 'Madera Teja Barro',
-			'cerchaMetalicaTejaLiviana' => 'Cercha Metalica Teja Liviana',
-			'losaConcreto' => 'Losa Concreto',
+			'pisoRiesgo' => 'Piso(s) en que se encuentra el riesgo',
+			'areaRiesgo' => 'Área del riesgo (m2)',
+			'mamposteriaReforzada' => 'Mampostería reforzada',
+			'mamposteriaConfinada' => 'Mampostería Ccnfinada',
+			'sistemaReticularCelulado' => 'Sistema reticular celulado',
+			'SistemaPorticoConcreto' => 'Sistema de pórtico concreto',
+			'unaDireccionC' => 'En una dirección',
+			'dosDireccionesC' => 'En dos direcciones',
+			'sistemaPorticoAcero' => 'Sistema de pórtico acero',
+			'unaDireccionA' => 'En una dirección',
+			'dosDireccionesA' => 'En dos direcciones',
+			'sistemaDualConcreto' => 'Sistema dual de concreto',
+			'sistemaMurosEstructurales' => 'Sistema de muros estructurales',
+			'maderaTejaBarro' => 'En madera y teja de barro',
+			'cerchaMetalicaTejaLiviana' => 'Cercha metálica y teja liviana',
+			'losaConcreto' => 'Losa de concreto',
 			'otro' => 'Otro',
 			'cual' => 'Cual',
-			'deterioro' => 'Deterioro',
+			'deterioro' => 'Deterioros por humedad, Fisuras y grietas',
 			'observaciones' => 'Observaciones',
 		);
 	}
@@ -131,7 +131,7 @@ class CaracteristicasConstruccion extends CActiveRecord
 		$criteria->compare('pisoRiesgo',$this->pisoRiesgo,true);
 		$criteria->compare('areaRiesgo',$this->areaRiesgo);
 		$criteria->compare('mamposteriaReforzada',$this->mamposteriaReforzada,true);
-		$criteria->compare('mamposteriacConfinada',$this->mamposteriacConfinada,true);
+		$criteria->compare('mamposteriaConfinada',$this->mamposteriaConfinada,true);
 		$criteria->compare('sistemaReticularCelulado',$this->sistemaReticularCelulado,true);
 		$criteria->compare('SistemaPorticoConcreto',$this->SistemaPorticoConcreto,true);
 		$criteria->compare('unaDireccionC',$this->unaDireccionC,true);

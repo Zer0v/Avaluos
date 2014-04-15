@@ -32,15 +32,15 @@ $this->menu=array(
 	<?php
 	$this->widget('zii.widgets.jui.CJuiAccordion',array(
 		'panels'=>array(
-			'Información General'=>$this->renderPartial('_viewformaciongeneral',array('model'=>$model),true),
-			'Información Predio'=>$this->renderPartial('_viewinformacionpredio',array('model'=>$model),true),
+			'1.INFORMACION GENERAL'=>$this->renderPartial('_viewformaciongeneral',array('model'=>$model),true),
+			'2. INFORMACION DEL PREDIO'=>$this->renderPartial('_viewinformacionpredio',array('model'=>$model),true),
+			'3. CARACTERISTICAS DE LA CONSTRUCCION'=>$this->renderPartial('_viewcaracteristicasconstruccion',array('model'=>$model),true),
 		),
-		// additional javascript options for the accordion plugin
 		'options'=>array(
 			'collapsible'=> true,
 			//'animated'=>'bounceslide',
 			'autoHeight'=>false,
-			'active'=>2,
+			'active'=>13,
 		),
 	));
 	?>

@@ -12,8 +12,10 @@
 		<?php echo $form->radioButtonList($model,'conjuntoCerrado',$SN,array('onclick'=>'muestraconjuntocerrado("conjuntocerradomostrar",this.value)','labelOptions'=>array('style'=>'display:inline'),'separator'=>'&nbsp;&nbsp;&nbsp;')); ?>
 		<?php echo $form->error($model,'conjuntoCerrado'); ?>
 	</div>
-
-	<div class="row" id="conjuntocerradomostrar">
+	
+	<?php $model->conjuntoCerrado=='No' ? $mconjuntocerrado='block' : $mconjuntocerrado='none' ?>
+	
+	<div class="row" id="conjuntocerradomostrar" style="display:<?php echo $mconjuntocerrado; ?>">
 		<?php echo $form->labelEx($model,'conjuntoCerradoOtro'); ?>
 		<?php echo $form->textField($model,'conjuntoCerradoOtro',array('size'=>60,'maxlength'=>250)); ?>
 		<?php echo $form->error($model,'conjuntoCerradoOtro'); ?>

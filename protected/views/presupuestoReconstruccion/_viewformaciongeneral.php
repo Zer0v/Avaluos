@@ -4,23 +4,23 @@ if($model->informacionGeneral!=null){
 	'data'=>$model,
 	'attributes'=>array(
 		array(
-			'label'=>'Persona Entrevistada',
+			'label'=>$model->informacionGeneral->attributeLabels()['personaEntrevistada'],
 			'value'=>$model->informacionGeneral->personaEntrevistada,
 		),
 		array(
-			'label'=>'Teléno',
+			'label'=>$model->informacionGeneral->attributeLabels()['telefono'],
 			'value'=>$model->informacionGeneral->telefono,
 		),
 		array(
-			'label'=>'Persona encargada de la Administración',
+			'label'=>$model->informacionGeneral->attributeLabels()['personaEncargadaAdministracion'],
 			'value'=>$model->informacionGeneral->personaEncargadaAdministracion,
 		),
 		array(
-			'label'=>'Cargo',
+			'label'=>$model->informacionGeneral->attributeLabels()['cargo'],
 			'value'=>$model->informacionGeneral->cargo,
 		),
 		array(
-			'label'=>'Ciudad',
+			'label'=>$model->informacionGeneral->attributeLabels()['ciudad'],
 			'value'=>$model->informacionGeneral->ciudad,
 		),
 	),
