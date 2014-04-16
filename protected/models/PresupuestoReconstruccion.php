@@ -13,6 +13,9 @@
  */
 class PresupuestoReconstruccion extends CActiveRecord
 {
+	public $nuevo;
+	public $nuevaCopropiedad;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -29,13 +32,22 @@ class PresupuestoReconstruccion extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('copropiedad', 'required'),
-			array('copropiedad, intermediario', 'length', 'max'=>250),
+			//array('', 'required'),
+			array('copropiedad', 'validacioncopropiedad'),
+			array('nuevo', 'length', 'max'=>5),
+			array('copropiedad, nuevaCopropiedad, intermediario', 'length', 'max'=>250),
 			array('nitCc, direccion, fechaVisita', 'length', 'max'=>25),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idPresupuestoReconstruccion, copropiedad, nitCc, direccion, fechaVisita, intermediario', 'safe', 'on'=>'search'),
+			array('nuevo, nuevaCopropiedad, idPresupuestoReconstruccion, copropiedad, nitCc, direccion, fechaVisita, intermediario', 'safe', 'on'=>'search'),
 		);
+	}
+	
+	public function validacioncopropiedad($attribute,$params){
+		if($this->copropiedad=='' && $this->nuevaCopropiedad==''){
+			$this->addError('copropiedad','La copropiedad no puede ser nula');
+			$this->addError('nuevaCopropiedad','');
+		}
 	}
 
 	/**
@@ -58,6 +70,8 @@ class PresupuestoReconstruccion extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'nuevo' => 'Nuevo',
+			'nuevaCopropiedad' => 'Copropiedad',
 			'idPresupuestoReconstruccion' => 'Id Presupuesto Reconstrucción',
 			'copropiedad' => 'Copropiedad',
 			'nitCc' => 'NIT/CC',
@@ -106,5 +120,17 @@ class PresupuestoReconstruccion extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+	
+	
+	public function presupuestoexistente()
+	{
+		$this->copropiedad=$this->nuevaCopropiedad;
+		$PRExistente=presupuestoReconstruccion::model()->findByAttributes(array('copropiedad'=>$this->copropiedad),array('order'=>'idPresupuestoReconstruccion DESC'));
+		if($PRExistente!==null){
+			$this->nitCc=$PRExistente->nitCc;
+			$this->direccion=$PRExistente->direccion;
+		}
+		
 	}
 }

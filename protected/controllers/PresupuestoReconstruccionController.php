@@ -110,6 +110,10 @@ class PresupuestoreconstruccionController extends Controller
 			$modelip->attributes=$_POST['InformacionPredio'];
 			$modelcc->attributes=$_POST['CaracteristicasConstruccion'];
 			
+			if($modelpr->nuevo=='No')
+				$modelpr->presupuestoexistente();
+			
+			
 			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate();
 			
 			 if($valid)

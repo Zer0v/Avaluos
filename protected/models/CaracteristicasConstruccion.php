@@ -48,7 +48,7 @@ class CaracteristicasConstruccion extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idPresupuestoReconstruccion, NPisos, NSotanos, existeMezanine, pisoRiesgo, areaRiesgo, mamposteriaReforzada, mamposteriaConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, deterioro', 'required'),
+			array('NPisos, NSotanos, existeMezanine, pisoRiesgo, areaRiesgo, mamposteriaReforzada, mamposteriaConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, deterioro', 'required'),
 			array('idCaracteristicasConstruccion, idPresupuestoReconstruccion, NPisos, NSotanos', 'numerical', 'integerOnly'=>true),
 			array('areaRiesgo', 'numerical'),
 			array('existeMezanine, mamposteriaReforzada, mamposteriaConfinada, sistemaReticularCelulado, SistemaPorticoConcreto, unaDireccionC, dosDireccionesC, sistemaPorticoAcero, unaDireccionA, dosDireccionesA, sistemaDualConcreto, sistemaMurosEstructurales, maderaTejaBarro, cerchaMetalicaTejaLiviana, losaConcreto, otro, deterioro', 'length', 'max'=>5),

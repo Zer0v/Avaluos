@@ -12,5 +12,14 @@ function muestraotrocc(id,rb){
 	}
 }
 
+function muestranuevo(ida,idn,rb){
+	if (document.getElementById){
+		var el = document.getElementById(idn); 
+		el.style.display = (rb == 'Si') ? 'block' : 'none'; 
+		var ele = document.getElementById(ida); 
+		ele.style.display = (rb == 'Si') ? 'none' : 'block'; 
+	}
+}
+
 
 
