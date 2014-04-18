@@ -35,6 +35,7 @@ $this->menu=array(
 			'1.INFORMACION GENERAL'=>$this->renderPartial('_viewformaciongeneral',array('model'=>$model),true),
 			'2. INFORMACION DEL PREDIO'=>$this->renderPartial('_viewinformacionpredio',array('model'=>$model),true),
 			'3. CARACTERISTICAS DE LA CONSTRUCCION'=>$this->renderPartial('_viewcaracteristicasconstruccion',array('model'=>$model),true),
+			'4. CARACTERISTICAS DE LAS INSTALACIONES'=>$this->renderPartial('_viewcaracteristicasinstalaciones',array('model'=>$model),true),
 		),
 		'options'=>array(
 			'collapsible'=> true,

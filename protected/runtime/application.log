@@ -6407,3 +6407,1204 @@ in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControl
 in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (274)
 in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (179)
 in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:30:16 [error] [exception.CException] exception 'CException' with message 'La propiedad "CaracteristicasInstalacion"."NPisos" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('NPisos')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('NPisos')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(CaracteristicasInstalacion), 'NPisos')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(CaracteristicasInstalacion), 'NPisos', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(CaracteristicasInstalacion), 'NPisos', Array)
+#5 C:\xampp\htdocs\Avaluos\protected\views\presupuestoreconstruccion\_formcaracteristicasinstalaciones.php(7): CActiveForm->textField(Object(CaracteristicasInstalacion), 'NPisos')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\Avaluos\protected\views\presupuestoreconstruccion\_form2.php(81): CController->renderPartial('_formcaracteris...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\Avaluos\protected\views\presupuestoreconstruccion\ingresar.php(18): CController->renderPartial('_form2', Array)
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#15 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('ingresar', Array, true)
+#18 C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php(144): CController->render('ingresar', Array)
+#19 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PresupuestoreconstruccionController->actionIngresar()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('ingresar')
+#28 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('presupuestoreco...')
+#29 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\Avaluos\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/Avaluos/presupuestoreconstruccion/ingresar
+HTTP_REFERER=http://localhost/Avaluos/presupuestoreconstruccion/index
+---
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (112)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "acueductoPropio" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "aRedPublica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "aCual" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "estadoRejillas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "estadoCanales" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "estadoAlcantarillas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "limpiezaTechos" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "estadoBajantes" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "plantaElectrica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "pEMarca" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "pEAño" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "pEPotencia" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "pECombustible" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "pEUbicacionFisica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "pEZonaAlimenta" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "transformadorPropio" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "tPMarca" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "tPAño" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "tPCapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "tPUbicacionFisica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "sistemaGas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "sGRedPublica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "sGTanqueAlmacenamiento" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "sGCapacidadTanque" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "sGUtilizaCilindros" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "sGCapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "sistemaAireAcondicionado" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "aATipoSistema" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "aACapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "aATorreEnfriamiento" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "aATECapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "aATECantidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mantenimientoInstalacionesFisicas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mIFPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mantenimientoPlantaElectrica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mPEPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mantenimientosubestaciónElectrica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mSEPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mantenimientoTransformadorPropio" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mTPPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mantenimientoSistemaGas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mSGPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mantenimientoAscensores" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mAPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mantenimientoDispositivosSeguridad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:33 [warning] [application] Error al establecer unsafe al atributo "mDSPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 01:32:39 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:32:41 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:34:29 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:34:30 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:43:08 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:43:11 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:43:14 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:49:33 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:49:36 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 01:50:20 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:24 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:24 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:25 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:29 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:31 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:33 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:39 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:42 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:42 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:44 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:45 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:47 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:49 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:51 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:14:53 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:02 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:03 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:07 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:11 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:12 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:13 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:18 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:19 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:22 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:23 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (112)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "acueductoPropio" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "aCual" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "estadoRejillas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "estadoCanales" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "estadoAlcantarillas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "limpiezaTechos" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "estadoBajantes" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "pEMarca" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "pEAño" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "pEPotencia" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "pECombustible" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "pEUbicacionFisica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "pEZonaAlimenta" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "tPMarca" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "tPAño" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "tPCapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "tPUbicacionFisica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "sGCapacidadTanque" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "sGCapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "aATipoSistema" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "aACapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "aATECapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "aATECantidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mantenimientoInstalacionesFisicas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mIFPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mantenimientoPlantaElectrica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mPEPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mantenimientosubestaciónElectrica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mSEPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mantenimientoTransformadorPropio" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mTPPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mantenimientoSistemaGas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mSGPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mantenimientoAscensores" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mAPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mantenimientoDispositivosSeguridad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:26 [warning] [application] Error al establecer unsafe al atributo "mDSPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:30 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:35 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:38 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:41 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:45 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:46 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:47 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:49 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:50 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:51 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (112)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "acueductoPropio" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "aCual" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "estadoRejillas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "estadoCanales" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "estadoAlcantarillas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "limpiezaTechos" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "estadoBajantes" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "pEMarca" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "pEAño" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "pEPotencia" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "pECombustible" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "pEUbicacionFisica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "pEZonaAlimenta" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "tPMarca" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "tPAño" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "tPCapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "tPUbicacionFisica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "sGCapacidadTanque" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "sGCapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "aATipoSistema" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "aACapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "aATECapacidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "aATECantidad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mantenimientoInstalacionesFisicas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mIFPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mantenimientoPlantaElectrica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mPEPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mantenimientosubestaciónElectrica" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mSEPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mantenimientoTransformadorPropio" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mTPPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mantenimientoSistemaGas" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mSGPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mantenimientoAscensores" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mAPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mantenimientoDispositivosSeguridad" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:15:54 [warning] [application] Error al establecer unsafe al atributo "mDSPersonalACargo" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (113)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Avaluos\index.php (13)
+2014/04/18 02:16:19 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:30:33 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:30:46 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:32:22 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:32:22 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:32:24 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:33:29 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:33:32 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:33:32 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:33:35 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:33:37 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:33:38 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:33:39 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:35:53 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:35:55 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:38:42 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:38:43 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:38:44 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:42:18 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:42:18 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:43:36 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:43:37 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:43:38 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:33 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:34 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:35 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:36 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:41 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:42 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:44 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:45 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:44:47 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:45:48 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:45:50 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:45:51 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:47:06 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:47:07 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:47:07 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:47:08 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:47:09 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:47:13 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:49:43 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:49:46 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:49:49 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:49:51 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:49:51 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:49:53 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:49:56 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:50:00 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:50:01 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:50:35 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:50:39 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:50:40 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:50:42 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:51:26 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:53:54 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:53:56 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/18 23:58:39 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:01:56 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:02:02 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:02:03 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:02:05 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:03:48 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:03:52 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:03:54 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:03:55 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:03:56 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:04:05 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:04:08 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:04:08 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:04:09 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:07:03 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:07:04 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:07:06 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:07:06 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:07:07 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:07:49 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:10:42 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:10:42 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:10:44 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:10:49 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:10:54 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:13:16 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:26 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:28 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:30 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:31 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:34 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:35 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:37 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:38 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:16:39 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:19:24 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:19:26 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:22:18 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:22:20 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:22:22 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:22:23 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:22:24 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:22:25 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:24:32 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:24:33 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:24:35 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:24:37 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:24:39 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:24:40 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:24:41 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:28:52 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:28:54 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:28:55 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:28:57 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:28:58 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:00 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:02 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:10 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:14 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:15 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:17 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:18 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:21 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:23 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:49 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)
+2014/04/19 00:29:53 [warning] [application] Error al establecer unsafe al atributo "observaciones" de "CaracteristicasConstruccion".
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (284)
+in C:\xampp\htdocs\Avaluos\protected\controllers\PresupuestoreconstruccionController.php (105)
+in C:\xampp\htdocs\Avaluos\protected\modules\cruge\components\CrugeAccessControlFilter.php (90)

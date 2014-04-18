@@ -18,4 +18,4 @@ $this->menu=array(
 
 <h1>Actualizar Presupuesto Reconstrucción <?php echo $modelpr->idPresupuestoReconstruccion; ?></h1>
 
-<?php $this->renderPartial('_form2', array('modelpr'=>$modelpr,'modelig'=>$modelig,'modelip'=>$modelip,'modelcc'=>$modelcc)); ?>
+<?php $this->renderPartial('_form2', array('modelpr'=>$modelpr,'modelig'=>$modelig,'modelip'=>$modelip,'modelcc'=>$modelcc,'modelci'=>$modelci)); ?>

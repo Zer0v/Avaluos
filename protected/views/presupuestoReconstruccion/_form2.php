@@ -78,6 +78,7 @@
 			'1.INFORMACIÓN GENERAL'=>$this->renderPartial('_forminformaciongeneral',array('model'=>$modelig,'form'=>$form),true),
 			'2. INFORMACIÓN DEL PREDIO'=>$this->renderPartial('_forminformacionpredio',array('model'=>$modelip,'form'=>$form),true),
 			'3. CARACTERISTICAS DE LA CONSTRUCCION'=>$this->renderPartial('_formcaracteristicasconstruccion',array('model'=>$modelcc,'form'=>$form),true),
+			'4. CARACTERISTICAS DE LAS INSTALACIONES'=>$this->renderPartial('_formcaracteristicasinstalaciones',array('model'=>$modelci,'form'=>$form),true),
 		),
 		'options'=>array(
 			'collapsible'=> true,
