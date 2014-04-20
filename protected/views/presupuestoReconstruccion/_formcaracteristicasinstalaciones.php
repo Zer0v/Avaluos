@@ -57,8 +57,8 @@
 		<?php echo $form->error($model,'plantaElectrica'); ?>
 	</div>
 
-	<?php $model->plantaElectrica=='Si' ? $plantaelectricacamostrar='block' : $plantaelectricacamostrar='none' ?>
-	<div class="grupo" id="plantaelectricamostrar" style="display:<?php echo $plantaelectricacamostrar; ?>">
+	<?php $model->plantaElectrica=='Si' ? $plantaelectricamostrar='block' : $plantaelectricamostrar='none' ?>
+	<div class="grupo" id="plantaelectricamostrar" style="display:<?php echo $plantaelectricamostrar; ?>">
 		<div class="row">
 			<?php echo $form->labelEx($model,'pEMarca'); ?>
 			<?php echo $form->textField($model,'pEMarca',array('size'=>60,'maxlength'=>250)); ?>

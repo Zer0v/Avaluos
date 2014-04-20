@@ -1,0 +1,35 @@
+<?php
+if($model->caracteristicasAlmacenamiento!=null){
+ $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
+		array(
+			'label'=>$model->caracteristicasAlmacenamiento->getAttributeLabel('tanques'),
+			'value'=>$model->caracteristicasAlmacenamiento->tanques,
+		),
+		array(
+			'label'=>$model->caracteristicasAlmacenamiento->getAttributeLabel('cantidad'),
+			'value'=>$model->caracteristicasAlmacenamiento->cantidad,
+		),
+		array(
+			'label'=>$model->caracteristicasAlmacenamiento->getAttributeLabel('ubicacionFisica'),
+			'value'=>$model->caracteristicasAlmacenamiento->ubicacionFisica,
+		),
+		array(
+			'label'=>$model->caracteristicasAlmacenamiento->getAttributeLabel('contenido'),
+			'value'=>$model->caracteristicasAlmacenamiento->contenido,
+		),
+		array(
+			'label'=>$model->caracteristicasAlmacenamiento->getAttributeLabel('capacidad'),
+			'value'=>$model->caracteristicasAlmacenamiento->capacidad,
+		),
+		array(
+			'label'=>$model->caracteristicasAlmacenamiento->getAttributeLabel('materialConstruccion'),
+			'value'=>$model->caracteristicasAlmacenamiento->materialConstruccion,
+		),
+	),
+)); 
+}else{
+	echo "No se ha ingresado Caracteristicas de Almacenamiento";
+}
+?>

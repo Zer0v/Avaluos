@@ -36,6 +36,8 @@ $this->menu=array(
 			'2. INFORMACION DEL PREDIO'=>$this->renderPartial('_viewinformacionpredio',array('model'=>$model),true),
 			'3. CARACTERISTICAS DE LA CONSTRUCCION'=>$this->renderPartial('_viewcaracteristicasconstruccion',array('model'=>$model),true),
 			'4. CARACTERISTICAS DE LAS INSTALACIONES'=>$this->renderPartial('_viewcaracteristicasinstalaciones',array('model'=>$model),true),
+			'5. CARACTERISTICAS DE LA MAQUINARIA Y EQUIPOS'=>$this->renderPartial('_viewcaracteristicasmaquinariaequipos',array('model'=>$model),true),
+			'6. CARACTERISTICAS DE ALMACENAMIENTO'=>$this->renderPartial('_viewcaracteristicasalmacenamiento',array('model'=>$model),true),
 		),
 		'options'=>array(
 			'collapsible'=> true,

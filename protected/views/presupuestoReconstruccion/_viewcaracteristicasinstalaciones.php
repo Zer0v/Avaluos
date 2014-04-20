@@ -1,190 +1,191 @@
 <?php
+
 if($model->caracteristicasInstalacion!=null){
  $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['acueductoPropio'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('acueductoPropio'),
 			'value'=>$model->caracteristicasInstalacion->acueductoPropio,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['aRedPublica'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('aRedPublica'),
 			'value'=>$model->caracteristicasInstalacion->aRedPublica,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['aCual'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('aCual'),
 			'value'=>$model->caracteristicasInstalacion->aCual,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['estadoRejillas'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('estadoRejillas'),
 			'value'=>$model->caracteristicasInstalacion->estadoRejillas,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['estadoCanales'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('estadoCanales'),
 			'value'=>$model->caracteristicasInstalacion->estadoCanales,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['estadoAlcantarillas'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('estadoAlcantarillas'),
 			'value'=>$model->caracteristicasInstalacion->estadoAlcantarillas,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['limpiezaTechos'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('limpiezaTechos'),
 			'value'=>$model->caracteristicasInstalacion->limpiezaTechos,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['estadoBajantes'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('estadoBajantes'),
 			'value'=>$model->caracteristicasInstalacion->estadoBajantes,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['plantaElectrica'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('plantaElectrica'),
 			'value'=>$model->caracteristicasInstalacion->plantaElectrica,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['pEMarca'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('pEMarca'),
 			'value'=>$model->caracteristicasInstalacion->pEMarca,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['pEAño'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('pEAño'),
 			'value'=>$model->caracteristicasInstalacion->pEAño,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['pEPotencia'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('pEPotencia'),
 			'value'=>$model->caracteristicasInstalacion->pEPotencia,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['pECombustible'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('pECombustible'),
 			'value'=>$model->caracteristicasInstalacion->pECombustible,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['pEUbicacionFisica'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('pEUbicacionFisica'),
 			'value'=>$model->caracteristicasInstalacion->pEUbicacionFisica,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['pEZonaAlimenta'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('pEZonaAlimenta'),
 			'value'=>$model->caracteristicasInstalacion->pEZonaAlimenta,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['transformadorPropio'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('transformadorPropio'),
 			'value'=>$model->caracteristicasInstalacion->transformadorPropio,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['tPMarca'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('tPMarca'),
 			'value'=>$model->caracteristicasInstalacion->tPMarca,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['tPAño'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('tPAño'),
 			'value'=>$model->caracteristicasInstalacion->tPAño,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['tPCapacidad'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('tPCapacidad'),
 			'value'=>$model->caracteristicasInstalacion->tPCapacidad,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['tPUbicacionFisica'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('tPUbicacionFisica'),
 			'value'=>$model->caracteristicasInstalacion->tPUbicacionFisica,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['sistemaGas'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('sistemaGas'),
 			'value'=>$model->caracteristicasInstalacion->sistemaGas,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['sGRedPublica'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('sGRedPublica'),
 			'value'=>$model->caracteristicasInstalacion->sGRedPublica,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['sGTanqueAlmacenamiento'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('sGTanqueAlmacenamiento'),
 			'value'=>$model->caracteristicasInstalacion->sGTanqueAlmacenamiento,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['sGCapacidadTanque'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('sGCapacidadTanque'),
 			'value'=>$model->caracteristicasInstalacion->sGCapacidadTanque,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['sGUtilizaCilindros'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('sGUtilizaCilindros'),
 			'value'=>$model->caracteristicasInstalacion->sGUtilizaCilindros,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['sGCapacidad'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('sGCapacidad'),
 			'value'=>$model->caracteristicasInstalacion->sGCapacidad,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['sistemaAireAcondicionado'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('sistemaAireAcondicionado'),
 			'value'=>$model->caracteristicasInstalacion->sistemaAireAcondicionado,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['aATipoSistema'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('aATipoSistema'),
 			'value'=>$model->caracteristicasInstalacion->aATipoSistema,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['aACapacidad'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('aACapacidad'),
 			'value'=>$model->caracteristicasInstalacion->aACapacidad,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['aATorreEnfriamiento'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('aATorreEnfriamiento'),
 			'value'=>$model->caracteristicasInstalacion->aATorreEnfriamiento,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['aATECapacidad'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('aATECapacidad'),
 			'value'=>$model->caracteristicasInstalacion->aATECapacidad,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['aATECantidad'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('aATECantidad'),
 			'value'=>$model->caracteristicasInstalacion->aATECantidad,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mantenimientoInstalacionesFisicas'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mantenimientoInstalacionesFisicas'),
 			'value'=>$model->caracteristicasInstalacion->mantenimientoInstalacionesFisicas,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mIFPersonalACargo'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mIFPersonalACargo'),
 			'value'=>$model->caracteristicasInstalacion->mIFPersonalACargo,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mantenimientoPlantaElectrica'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mantenimientoPlantaElectrica'),
 			'value'=>$model->caracteristicasInstalacion->mantenimientoPlantaElectrica,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mPEPersonalACargo'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mPEPersonalACargo'),
 			'value'=>$model->caracteristicasInstalacion->mPEPersonalACargo,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mantenimientosubestaciónElectrica'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mantenimientosubestaciónElectrica'),
 			'value'=>$model->caracteristicasInstalacion->mantenimientosubestaciónElectrica,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mSEPersonalACargo'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mSEPersonalACargo'),
 			'value'=>$model->caracteristicasInstalacion->mSEPersonalACargo,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mantenimientoTransformadorPropio'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mantenimientoTransformadorPropio'),
 			'value'=>$model->caracteristicasInstalacion->mantenimientoTransformadorPropio,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mTPPersonalACargo'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mTPPersonalACargo'),
 			'value'=>$model->caracteristicasInstalacion->mTPPersonalACargo,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mantenimientoSistemaGas'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mantenimientoSistemaGas'),
 			'value'=>$model->caracteristicasInstalacion->mantenimientoSistemaGas,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mSGPersonalACargo'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mSGPersonalACargo'),
 			'value'=>$model->caracteristicasInstalacion->mSGPersonalACargo,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mantenimientoAscensores'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mantenimientoAscensores'),
 			'value'=>$model->caracteristicasInstalacion->mantenimientoAscensores,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mAPersonalACargo'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mAPersonalACargo'),
 			'value'=>$model->caracteristicasInstalacion->mAPersonalACargo,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mantenimientoDispositivosSeguridad'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mantenimientoDispositivosSeguridad'),
 			'value'=>$model->caracteristicasInstalacion->mantenimientoDispositivosSeguridad,
 		),
 		array(
-			'label'=>$model->caracteristicasInstalacion->attributeLabels()['mDSPersonalACargo'],
+			'label'=>$model->caracteristicasInstalacion->getAttributeLabel('mDSPersonalACargo'),
 			'value'=>$model->caracteristicasInstalacion->mDSPersonalACargo,
 		),
 	),

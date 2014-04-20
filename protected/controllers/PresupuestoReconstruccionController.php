@@ -101,22 +101,26 @@ class PresupuestoreconstruccionController extends Controller
 		$modelip=new InformacionPredio;
 		$modelcc=new CaracteristicasConstruccion;
 		$modelci=new CaracteristicasInstalacion;
+		$modelcme=new CaracteristicasMaquinariaEquipos;
+		$modelca=new CaracteristicasAlmacenamiento;
 		
-		$this->performAjaxValidation(array($modelpr,$modelig,$modelip,$modelcc,$modelci));
+		$this->performAjaxValidation(array($modelpr,$modelig,$modelip,$modelcc,$modelci,$modelcme,$modelca));
 		
-		if(isset($_POST['PresupuestoReconstruccion'], $_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['CaracteristicasConstruccion'], $_POST['CaracteristicasInstalacion']))
+		if(isset($_POST['PresupuestoReconstruccion'], $_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['CaracteristicasConstruccion'], $_POST['CaracteristicasInstalacion'], $_POST['CaracteristicasMaquinariaEquipos'], $_POST['CaracteristicasAlmacenamiento']))
 		{
 			$modelpr->attributes=$_POST['PresupuestoReconstruccion'];
 			$modelig->attributes=$_POST['InformacionGeneral'];
 			$modelip->attributes=$_POST['InformacionPredio'];
 			$modelcc->attributes=$_POST['CaracteristicasConstruccion'];
 			$modelcc->attributes=$_POST['CaracteristicasInstalacion'];
+			$modelcme->attributes=$_POST['CaracteristicasMaquinariaEquipos'];
+			$modelca->attributes=$_POST['CaracteristicasAlmacenamiento'];
 			
 			if($modelpr->nuevo=='No')
 				$modelpr->presupuestoexistente();
 			
 			
-			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate() && $modelci->validate();
+			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate() && $modelci->validate() && $modelcme->validate() && $modelca->validate();
 			
 			 if($valid)
 			{
@@ -126,10 +130,14 @@ class PresupuestoreconstruccionController extends Controller
 				$modelip->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
 				$modelcc->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
 				$modelci->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
+				$modelcme->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
+				$modelca->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
 				$modelig->save(false);
 				$modelip->save(false);
 				$modelcc->save(false);
 				$modelci->save(false);
+				$modelcme->save(false);
+				$modelca->save(false);
 				
 				$this->redirect(array('view','id'=>$modelpr->idPresupuestoReconstruccion));
 			}
@@ -141,6 +149,8 @@ class PresupuestoreconstruccionController extends Controller
 			'modelip'=>$modelip,
 			'modelcc'=>$modelcc,
 			'modelci'=>$modelci,
+			'modelcme'=>$modelcme,
+			'modelca'=>$modelca,
 		));
 	}
 
@@ -180,19 +190,23 @@ class PresupuestoreconstruccionController extends Controller
 		$modelip=InformacionPredio::model()->find('idPresupuestoReconstruccion = "'.$id.'"');
 		$modelcc=CaracteristicasConstruccion::model()->find('idPresupuestoReconstruccion = "'.$id.'"');
 		$modelci=CaracteristicasInstalacion::model()->find('idPresupuestoReconstruccion = "'.$id.'"');
+		$modelcme=CaracteristicasMaquinariaEquipos::model()->find('idPresupuestoReconstruccion = "'.$id.'"');
+		$modelca=CaracteristicasAlmacenamiento::model()->find('idPresupuestoReconstruccion = "'.$id.'"');
 		
 		// Uncomment the following line if AJAX validation is needed
-		$this->performAjaxValidation(array($modelpr,$modelig,$modelip,$modelcc,$modelci));
+		$this->performAjaxValidation(array($modelpr,$modelig,$modelip,$modelcc,$modelci,$modelcme,$modelca));
 
-		if(isset($_POST['PresupuestoReconstruccion'], $_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['CaracteristicasConstruccion'], $_POST['CaracteristicasInstalacion']))
+		if(isset($_POST['PresupuestoReconstruccion'], $_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['CaracteristicasConstruccion'], $_POST['CaracteristicasInstalacion'], $_POST['CaracteristicasMaquinariaEquipos'], $_POST['CaracteristicasAlmacenamiento']))
 		{
 			$modelpr->attributes=$_POST['PresupuestoReconstruccion'];
 			$modelig->attributes=$_POST['InformacionGeneral'];
 			$modelip->attributes=$_POST['InformacionPredio'];
 			$modelcc->attributes=$_POST['CaracteristicasConstruccion'];
-			$modelcc->attributes=$_POST['CaracteristicasInstalacion'];
+			$modelci->attributes=$_POST['CaracteristicasInstalacion'];
+			$modelcme->attributes=$_POST['CaracteristicasMaquinariaEquipos'];
+			$modelca->attributes=$_POST['CaracteristicasAlmacenamiento'];
 			
-			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate() && $modelci->validate();
+			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate() && $modelci->validate() && $modelcme->validate() && $modelca->validate();
 			
 			 if($valid){
 				$modelpr->save(false);
@@ -200,6 +214,8 @@ class PresupuestoreconstruccionController extends Controller
 				$modelip->save(false);
 				$modelcc->save(false);
 				$modelci->save(false);
+				$modelcme->save(false);
+				$modelca->save(false);
 				
 				$this->redirect(array('view','id'=>$id));
 			 }
@@ -211,6 +227,8 @@ class PresupuestoreconstruccionController extends Controller
 			'modelip'=>$modelip,
 			'modelcc'=>$modelcc,
 			'modelci'=>$modelci,
+			'modelcme'=>$modelcme,
+			'modelca'=>$modelca,
 		));
 	}
 
@@ -226,6 +244,8 @@ class PresupuestoreconstruccionController extends Controller
 		$modelip=InformacionPredio::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
 		$modelcc=CaracteristicasConstruccion::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
 		$modelci=CaracteristicasInstalacion::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
+		$modelcme=CaracteristicasMaquinariaEquipos::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
+		$modelca=CaracteristicasAlmacenamiento::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
 		
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))

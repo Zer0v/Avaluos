@@ -4,95 +4,95 @@ if($model->caracteristicasConstruccion!=null){
 	'data'=>$model,
 	'attributes'=>array(
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['NPisos'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('NPisos'),
 			'value'=>$model->caracteristicasConstruccion->NPisos,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['NSotanos'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('NSotanos'),
 			'value'=>$model->caracteristicasConstruccion->NSotanos,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['existeMezanine'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('existeMezanine'),
 			'value'=>$model->caracteristicasConstruccion->existeMezanine,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['pisoRiesgo'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('pisoRiesgo'),
 			'value'=>$model->caracteristicasConstruccion->pisoRiesgo,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['areaRiesgo'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('areaRiesgo'),
 			'value'=>$model->caracteristicasConstruccion->areaRiesgo,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['mamposteriaReforzada'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('mamposteriaReforzada'),
 			'value'=>$model->caracteristicasConstruccion->mamposteriaReforzada,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['mamposteriaConfinada'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('mamposteriaConfinada'),
 			'value'=>$model->caracteristicasConstruccion->mamposteriaConfinada,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['sistemaReticularCelulado'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('sistemaReticularCelulado'),
 			'value'=>$model->caracteristicasConstruccion->sistemaReticularCelulado,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['SistemaPorticoConcreto'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('SistemaPorticoConcreto'),
 			'value'=>$model->caracteristicasConstruccion->SistemaPorticoConcreto,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['unaDireccionC'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('unaDireccionC'),
 			'value'=>$model->caracteristicasConstruccion->unaDireccionC,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['dosDireccionesC'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('dosDireccionesC'),
 			'value'=>$model->caracteristicasConstruccion->dosDireccionesC,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['sistemaPorticoAcero'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('sistemaPorticoAcero'),
 			'value'=>$model->caracteristicasConstruccion->sistemaPorticoAcero,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['unaDireccionA'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('unaDireccionA'),
 			'value'=>$model->caracteristicasConstruccion->unaDireccionA,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['dosDireccionesA'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('dosDireccionesA'),
 			'value'=>$model->caracteristicasConstruccion->dosDireccionesA,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['sistemaDualConcreto'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('sistemaDualConcreto'),
 			'value'=>$model->caracteristicasConstruccion->sistemaDualConcreto,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['sistemaMurosEstructurales'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('sistemaMurosEstructurales'),
 			'value'=>$model->caracteristicasConstruccion->sistemaMurosEstructurales,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['maderaTejaBarro'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('maderaTejaBarro'),
 			'value'=>$model->caracteristicasConstruccion->maderaTejaBarro,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['cerchaMetalicaTejaLiviana'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('cerchaMetalicaTejaLiviana'),
 			'value'=>$model->caracteristicasConstruccion->cerchaMetalicaTejaLiviana,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['losaConcreto'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('losaConcreto'),
 			'value'=>$model->caracteristicasConstruccion->losaConcreto,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['otro'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('otro'),
 			'value'=>$model->caracteristicasConstruccion->otro,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['cual'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('cual'),
 			'value'=>$model->caracteristicasConstruccion->cual,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['deterioro'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('deterioro'),
 			'value'=>$model->caracteristicasConstruccion->deterioro,
 		),
 		array(
-			'label'=>$model->caracteristicasConstruccion->attributeLabels()['observaciones'],
+			'label'=>$model->caracteristicasConstruccion->getAttributeLabel('observaciones'),
 			'value'=>$model->caracteristicasConstruccion->observaciones,
 		),
 	),

@@ -15,4 +15,4 @@ $this->menu=array(
 
 <h1>Ingresar Presupuesto Reconstrucción</h1>
 
-<?php $this->renderPartial('_form2', array('modelpr'=>$modelpr,'modelig'=>$modelig,'modelip'=>$modelip,'modelcc'=>$modelcc,'modelci'=>$modelci)); ?>
+<?php $this->renderPartial('_form2', array('modelpr'=>$modelpr,'modelig'=>$modelig,'modelip'=>$modelip,'modelcc'=>$modelcc,'modelci'=>$modelci,'modelcme'=>$modelcme,'modelca'=>$modelca)); ?>

@@ -79,6 +79,8 @@
 			'2. INFORMACIÓN DEL PREDIO'=>$this->renderPartial('_forminformacionpredio',array('model'=>$modelip,'form'=>$form),true),
 			'3. CARACTERISTICAS DE LA CONSTRUCCION'=>$this->renderPartial('_formcaracteristicasconstruccion',array('model'=>$modelcc,'form'=>$form),true),
 			'4. CARACTERISTICAS DE LAS INSTALACIONES'=>$this->renderPartial('_formcaracteristicasinstalaciones',array('model'=>$modelci,'form'=>$form),true),
+			'5. CARACTERISTICAS DE LA MAQUINARIA Y EQUIPOS'=>$this->renderPartial('_formcaracteristicasmaquinariaequipos',array('model'=>$modelcme,'form'=>$form),true),
+			'6. CARACTERISTICAS DE ALMACENAMIENTO'=>$this->renderPartial('_formcaracteristicasalmacenamiento',array('model'=>$modelca,'form'=>$form),true),
 		),
 		'options'=>array(
 			'collapsible'=> true,

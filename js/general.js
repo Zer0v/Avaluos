@@ -77,6 +77,13 @@ function muestratorreenfriamiento(id,rb){
 	}
 }
 
+function muestratanques(id,rb){
+	if (document.getElementById){
+		var el = document.getElementById(id); 
+		el.style.display = (rb == 'Si') ? 'block' : 'none'; 
+	}
+}
+
 function muestramantenimientoinstalacionesfisicas(id,cb){
 	if (document.getElementById){
 		var el = document.getElementById(id); 
