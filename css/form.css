@@ -34,6 +34,13 @@
  * @license http://www.yiiframework.com/license/
  */
 
+ 
+ 
+ .grupo{
+	border:1px solid;
+	border-radius:25px;
+	padding: 10px;
+ }
 
 div.form
 {

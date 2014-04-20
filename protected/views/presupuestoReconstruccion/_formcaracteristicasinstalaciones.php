@@ -2,7 +2,7 @@
 	
 	<?php $SN = array('Si'=>'Si', 'No'=>'No'); ?>
 
-<div class="row">
+	<div class="row">
 		<?php echo $form->labelEx($model,'acueductoPropio'); ?>
 		<?php echo $form->radioButtonList($model,'acueductoPropio',$SN,array('labelOptions'=>array('style'=>'display:inline'),'separator'=>'&nbsp;&nbsp;&nbsp;')); ?>
 		<?php echo $form->error($model,'acueductoPropio'); ?>
@@ -58,7 +58,7 @@
 	</div>
 
 	<?php $model->plantaElectrica=='Si' ? $plantaelectricacamostrar='block' : $plantaelectricacamostrar='none' ?>
-	<div id="plantaelectricamostrar" style="display:<?php echo $plantaelectricacamostrar; ?>">
+	<div class="grupo" id="plantaelectricamostrar" style="display:<?php echo $plantaelectricacamostrar; ?>">
 		<div class="row">
 			<?php echo $form->labelEx($model,'pEMarca'); ?>
 			<?php echo $form->textField($model,'pEMarca',array('size'=>60,'maxlength'=>250)); ?>
@@ -103,7 +103,7 @@
 	</div>
 
 	<?php $model->transformadorPropio=='Si' ? $transformadorpropiomostrar='block' : $transformadorpropiomostrar='none' ?>
-	<div id="transformadorpropiomostrar" style="display:<?php echo $transformadorpropiomostrar; ?>">
+	<div class="grupo" id="transformadorpropiomostrar" style="display:<?php echo $transformadorpropiomostrar; ?>">
 		<div class="row">
 			<?php echo $form->labelEx($model,'tPMarca'); ?>
 			<?php echo $form->textField($model,'tPMarca',array('size'=>60,'maxlength'=>250)); ?>
@@ -136,10 +136,10 @@
 	</div>
 
 	<?php $model->sistemaGas=='Si' ? $sistemagasmostrar='block' : $sistemagasmostrar='none' ?>
-	<div id="sistemagasmostrar" style="display:<?php echo $sistemagasmostrar; ?>">
+	<div class="grupo" id="sistemagasmostrar" style="display:<?php echo $sistemagasmostrar; ?>">
 		<div class="row">
 			<?php echo $form->labelEx($model,'sGRedPublica'); ?>
-			<?php echo $form->radioButtonList($model,'acueductoPropio',$SN,array('labelOptions'=>array('style'=>'display:inline'),'separator'=>'&nbsp;&nbsp;&nbsp;')); ?>
+			<?php echo $form->radioButtonList($model,'sGRedPublica',$SN,array('labelOptions'=>array('style'=>'display:inline'),'separator'=>'&nbsp;&nbsp;&nbsp;')); ?>
 			<?php echo $form->error($model,'sGRedPublica'); ?>
 		</div>
 
@@ -177,7 +177,7 @@
 	</div>
 
 	<?php $model->sistemaAireAcondicionado=='Si' ? $aireacondicionadomostrar='block' : $aireacondicionadomostrar='none' ?>
-	<div id="aireacondicionadomostrar" style="display:<?php echo $aireacondicionadomostrar; ?>">
+	<div class="grupo" id="aireacondicionadomostrar" style="display:<?php echo $aireacondicionadomostrar; ?>">
 		<div class="row">
 			<?php echo $form->labelEx($model,'aATipoSistema'); ?>
 			<?php echo $form->textField($model,'aATipoSistema',array('size'=>60,'maxlength'=>250)); ?>
