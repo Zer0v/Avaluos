@@ -97,3 +97,13 @@ CREATE TABLE IF NOT EXISTS `caracteristicas_maquinaria_equipos` (
 
 INSERT INTO `caracteristicas_maquinaria_equipos` (`idCaracteristicasMaquinariaEquipos`, `idPresupuestoReconstruccion`, `descripcion`, `hojaVida`) VALUES
 (1, 1, 'Sostema de bombeo, motor puerta cantonera de acceso vehicular, motor puerta electrica de acceso vehicular, planta electrica, transformador, subestacion electrica, 1 ascensor mitsubishi, guadaña.', 'Si');
+
+CREATE TABLE IF NOT EXISTS `registro_fotografico` (
+  `idRegistroFotografico` int(11) NOT NULL AUTO_INCREMENT,
+  `idPresupuestoReconstruccion` int(11) DEFAULT NULL,
+  `imagen` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`idRegistroFotografico`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+INSERT INTO `registro_fotografico` (`idRegistroFotografico`, `idPresupuestoReconstruccion`, `imagen`) VALUES
+(1, 1, '504351-1.jpg');

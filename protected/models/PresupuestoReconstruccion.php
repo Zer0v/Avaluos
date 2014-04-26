@@ -64,6 +64,7 @@ class PresupuestoReconstruccion extends CActiveRecord
 			'caracteristicasInstalacion'=>array(self::HAS_ONE,'CaracteristicasInstalacion','idPresupuestoReconstruccion'),
 			'caracteristicasMaquinariaEquipos'=>array(self::HAS_ONE,'CaracteristicasMaquinariaEquipos','idPresupuestoReconstruccion'),
 			'caracteristicasAlmacenamiento'=>array(self::HAS_ONE,'CaracteristicasAlmacenamiento','idPresupuestoReconstruccion'),
+                        'registroFotografico'=>array(self::HAS_MANY,'RegistroFotografico','idPresupuestoReconstruccion'),
 		);
 	}
 

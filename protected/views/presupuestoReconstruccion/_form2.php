@@ -4,11 +4,14 @@
 <?php $form = $this->beginWidget('CActiveForm', array(
     'id'=>'presupuesto-reconstruccion-form',
     'enableAjaxValidation'=>true,
+    'htmlOptions'=>array(    
+        'enctype'=>'multipart/form-data',
+    ),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary(array($modelig,$modelip,$modelpr,$modelcc)); ?>
+	<?php echo $form->errorSummary(array($modelig,$modelip,$modelpr,$modelcc,$modelci,$modelcme,$modelca/*,$modelrf*/)); ?>
 	
 	<?php $SN = array('Si'=>'Si', 'No'=>'No'); ?>
 	
@@ -81,6 +84,7 @@
 			'4. CARACTERISTICAS DE LAS INSTALACIONES'=>$this->renderPartial('_formcaracteristicasinstalaciones',array('model'=>$modelci,'form'=>$form),true),
 			'5. CARACTERISTICAS DE LA MAQUINARIA Y EQUIPOS'=>$this->renderPartial('_formcaracteristicasmaquinariaequipos',array('model'=>$modelcme,'form'=>$form),true),
 			'6. CARACTERISTICAS DE ALMACENAMIENTO'=>$this->renderPartial('_formcaracteristicasalmacenamiento',array('model'=>$modelca,'form'=>$form),true),
+                        '13. REGISTRO FOTOGRAFICO'=>$this->renderPartial('_formregistrofotografico',array('model'=>$modelrf,'form'=>$form,'msg'=>$msg),true),
 		),
 		'options'=>array(
 			'collapsible'=> true,

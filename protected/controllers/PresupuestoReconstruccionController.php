@@ -103,35 +103,40 @@ class PresupuestoreconstruccionController extends Controller
 		$modelci=new CaracteristicasInstalacion;
 		$modelcme=new CaracteristicasMaquinariaEquipos;
 		$modelca=new CaracteristicasAlmacenamiento;
+                $modelrf=new RegistroFotografico;
+                $msg='';
 		
-		$this->performAjaxValidation(array($modelpr,$modelig,$modelip,$modelcc,$modelci,$modelcme,$modelca));
+		$this->performAjaxValidation(array($modelpr,$modelig,$modelip,$modelcc,$modelci,$modelcme,$modelca,$modelrf));
 		
-		if(isset($_POST['PresupuestoReconstruccion'], $_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['CaracteristicasConstruccion'], $_POST['CaracteristicasInstalacion'], $_POST['CaracteristicasMaquinariaEquipos'], $_POST['CaracteristicasAlmacenamiento']))
+		if(isset($_POST['PresupuestoReconstruccion'], $_POST['InformacionGeneral'], $_POST['InformacionPredio'], $_POST['CaracteristicasConstruccion'], $_POST['CaracteristicasInstalacion'], $_POST['CaracteristicasMaquinariaEquipos'], $_POST['CaracteristicasAlmacenamiento']/*, $_POST['RegistroFotografico']*/))
 		{
 			$modelpr->attributes=$_POST['PresupuestoReconstruccion'];
 			$modelig->attributes=$_POST['InformacionGeneral'];
 			$modelip->attributes=$_POST['InformacionPredio'];
 			$modelcc->attributes=$_POST['CaracteristicasConstruccion'];
-			$modelcc->attributes=$_POST['CaracteristicasInstalacion'];
+			$modelci->attributes=$_POST['CaracteristicasInstalacion'];
 			$modelcme->attributes=$_POST['CaracteristicasMaquinariaEquipos'];
 			$modelca->attributes=$_POST['CaracteristicasAlmacenamiento'];
+                        
+                        $imagen=CUploadedFile::getInstancesByName('imagen');
 			
 			if($modelpr->nuevo=='No')
 				$modelpr->presupuestoexistente();
 			
 			
-			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate() && $modelci->validate() && $modelcme->validate() && $modelca->validate();
+			$valid=$modelpr->validate() && $modelig->validate() && $modelip->validate() && $modelcc->validate() && $modelci->validate() && $modelcme->validate() && $modelca->validate()/* && $modelrf->validate()*/;
 			
 			 if($valid)
 			{
 				// use false parameter to disable validation
 				$modelpr->save(false);
-				$modelig->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
-				$modelip->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
-				$modelcc->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
-				$modelci->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
-				$modelcme->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
-				$modelca->idPresupuestoReconstruccion=$modelpr->idPresupuestoReconstruccion;
+                                $id=$modelpr->idPresupuestoReconstruccion;
+				$modelig->idPresupuestoReconstruccion=$id;
+				$modelip->idPresupuestoReconstruccion=$id;
+				$modelcc->idPresupuestoReconstruccion=$id;
+				$modelci->idPresupuestoReconstruccion=$id;
+				$modelcme->idPresupuestoReconstruccion=$id;
+				$modelca->idPresupuestoReconstruccion=$id;
 				$modelig->save(false);
 				$modelip->save(false);
 				$modelcc->save(false);
@@ -139,9 +144,36 @@ class PresupuestoreconstruccionController extends Controller
 				$modelcme->save(false);
 				$modelca->save(false);
 				
+                                /////
+                                
+                                //$buscar=array(' ','ñ','á','é','í','ó','ú');
+                                //$reemplazar=array('-','n','a','e','i','o','u');
+
+                                $ruta=Yii::getPathOfAlias('webroot').'/images/'.$id.'/';
+
+                                if(!is_dir($ruta)){
+                                    mkdir($ruta, 0, true);
+                                    chmod($ruta, 0755);
+                                }
+                                foreach ($imagen as $im => $i) {
+                                    $aleatorio=rand(100000,999999);
+                                    $img=$aleatorio.'-'.$i->name;
+
+                                    $modelrf_s=new RegistroFotografico;
+                                    $modelrf_s->idPresupuestoReconstruccion=$id;
+                                    $modelrf_s->imagen=$img; 
+                                    $modelrf_s->save();
+
+                                    $i->saveAs($ruta.$img);
+                                }
+                                
+                                ////////
+                                
+                                
 				$this->redirect(array('view','id'=>$modelpr->idPresupuestoReconstruccion));
 			}
-		}
+                        
+                }
 
 		$this->render('ingresar',array(
 			'modelpr'=>$modelpr,
@@ -151,6 +183,8 @@ class PresupuestoreconstruccionController extends Controller
 			'modelci'=>$modelci,
 			'modelcme'=>$modelcme,
 			'modelca'=>$modelca,
+                        'modelrf'=>$modelrf,
+                        'msg'=>$msg,
 		));
 	}
 
@@ -239,14 +273,32 @@ class PresupuestoreconstruccionController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
-		$modelig=InformacionGeneral::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
-		$modelip=InformacionPredio::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
-		$modelcc=CaracteristicasConstruccion::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
-		$modelci=CaracteristicasInstalacion::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
-		$modelcme=CaracteristicasMaquinariaEquipos::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
-		$modelca=CaracteristicasAlmacenamiento::model()->find('idPresupuestoReconstruccion = "'.$id.'"')->delete();
+                $model=$this->loadModel($id);
+                
+                $model->informacionGeneral->delete();
+                $model->informacionPredio->delete();
+                $model->caracteristicasConstruccion->delete();
+                $model->caracteristicasInstalacion->delete();
+                $model->caracteristicasMaquinariaEquipos->delete();
+                $model->caracteristicasAlmacenamiento->delete();
 		
+                if($model->registroFotografico!==null){
+                    $ruta=Yii::getPathOfAlias('webroot').'/images/'.$id;
+                    if(!is_dir($ruta)){
+                        foreach(glob($ruta."/*") as $archivos_carpeta)
+                        {
+                            unlink($archivos_carpeta);
+                        }
+                        rmdir($ruta);
+                    }
+                
+                    foreach ($model->registroFotografico as $rf){
+                        $rf->delete();
+                    }
+                }
+                
+                $model->delete();
+                
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
